@@ -4,6 +4,9 @@ import java.util.HashSet;
 import java.util.Set;
 import utils.Node;
 
+/**
+ * 2.1 Write code to remove duplicates from unsorted linked list.
+ */
 public class RemoveDuplicates {
   /**
    * Remove duplicates from the input linked list, with additional buffer is permitted.
