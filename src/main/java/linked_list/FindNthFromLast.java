@@ -3,7 +3,7 @@ package linked_list;
 import utils.Node;
 
 /**
- * Implement an algorithm to find the nth to the last element of a singly linked list.
+ * 2.2 Implement an algorithm to find the nth to the last element of a singly linked list.
  */
 public class FindNthFromLast {
   /**
