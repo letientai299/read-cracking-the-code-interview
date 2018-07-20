@@ -1,14 +1,16 @@
 package linked_list;
 
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import utils.Node;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNull;
 
 public class FindNthFromLastTest {
   private Node head;
 
-  @Before
+  @BeforeEach
   public void setup() {
     head = new Node(1);
     Node node = head;
@@ -24,12 +26,12 @@ public class FindNthFromLastTest {
     int k = 0;
     Node n = FindNthFromLast.findNth(head, k);
     System.out.println(n.data);
-    Assert.assertEquals(10 - k, n.data);
+    assertEquals(10 - k, n.data);
   }
 
   @Test
   public void findNth_null() {
     Node n = FindNthFromLast.findNth(head, 10);
-    Assert.assertNull(n);
+    assertNull(n);
   }
 }

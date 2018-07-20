@@ -21,9 +21,21 @@ dependencies {
   // This dependency is found on compile classpath of this component and consumers.
   compile 'com.google.guava:guava:23.6-jre'
 
-  // Use JUnit test framework
-  testCompile 'junit:junit:4.12'
+  testCompile('org.junit.jupiter:junit-jupiter-api:5.2.0')
+  testRuntime('org.junit.jupiter:junit-jupiter-engine:5.2.0')
 }
+
+//test {
+//  useJUnitPlatform()
+//
+//  testLogging {
+//    events "passed", "skipped", "failed"
+//  }
+//
+//  reports {
+//    html.enabled = true
+//  }
+//}
 
 // In this section you declare where to find the dependencies of your project
 repositories {

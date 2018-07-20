@@ -2,17 +2,17 @@ package linked_list;
 
 import java.util.HashSet;
 import java.util.Set;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import utils.Node;
 
-import static org.junit.Assert.assertNotNull;
-import static org.junit.Assert.assertTrue;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 public class RemoveDuplicatesTest {
   private Node head;
 
-  @Before
+  @BeforeEach
   public void setup() {
     int[] arr = new int[] {1, 2, 3, 4, 1, 2, 1, 3, 4};
     head = new Node(1);
