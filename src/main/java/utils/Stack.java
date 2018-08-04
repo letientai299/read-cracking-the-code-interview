@@ -2,6 +2,7 @@ package utils;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.EmptyStackException;
 import java.util.List;
 
 /**
@@ -31,6 +32,14 @@ public class Stack {
     }
 
     return node;
+  }
+
+  public int peek() {
+    if (top != null) {
+      return top.data;
+    }
+
+    throw new EmptyStackException();
   }
 
   public boolean isEmpty() {
